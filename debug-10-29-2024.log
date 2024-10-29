@@ -1,0 +1,70 @@
+debug-10-29-2024.cpp: In function ‘int main()’:
+debug-10-29-2024.cpp:25:14: error: reference to ‘size’ is ambiguous
+   25 |     double a[size] = {0.5, 1.5, 6.0, 7.5, 2.3, 4.6};
+      |              ^~~~
+In file included from /usr/include/c++/13/string:53,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from debug-10-29-2024.cpp:1:
+/usr/include/c++/13/bits/range_access.h:274:5: note: candidates are: ‘template<class _Tp, long unsigned int _Nm> constexpr std::size_t std::size(const _Tp (&)[_Nm])’
+  274 |     size(const _Tp (&)[_Nm]) noexcept
+      |     ^~~~
+/usr/include/c++/13/bits/range_access.h:264:5: note:                 ‘template<class _Container> constexpr decltype (__cont.size()) std::size(const _Container&)’
+  264 |     size(const _Container& __cont) noexcept(noexcept(__cont.size()))
+      |     ^~~~
+debug-10-29-2024.cpp:6:11: note:                 ‘const int size’
+    6 | const int size = 6;
+      |           ^~~~
+debug-10-29-2024.cpp:27:37: error: ‘a’ was not declared in this scope
+   27 |     cout << "average = " << average(a, size) << endl;
+      |                                     ^
+debug-10-29-2024.cpp:27:40: error: reference to ‘size’ is ambiguous
+   27 |     cout << "average = " << average(a, size) << endl;
+      |                                        ^~~~
+/usr/include/c++/13/bits/range_access.h:274:5: note: candidates are: ‘template<class _Tp, long unsigned int _Nm> constexpr std::size_t std::size(const _Tp (&)[_Nm])’
+  274 |     size(const _Tp (&)[_Nm]) noexcept
+      |     ^~~~
+/usr/include/c++/13/bits/range_access.h:264:5: note:                 ‘template<class _Container> constexpr decltype (__cont.size()) std::size(const _Container&)’
+  264 |     size(const _Container& __cont) noexcept(noexcept(__cont.size()))
+      |     ^~~~
+debug-10-29-2024.cpp:6:11: note:                 ‘const int size’
+    6 | const int size = 6;
+      |           ^~~~
+debug-10-29-2024.cpp:28:36: error: reference to ‘size’ is ambiguous
+   28 |     cout << "minimum = " << min(a, size) << endl;
+      |                                    ^~~~
+/usr/include/c++/13/bits/range_access.h:274:5: note: candidates are: ‘template<class _Tp, long unsigned int _Nm> constexpr std::size_t std::size(const _Tp (&)[_Nm])’
+  274 |     size(const _Tp (&)[_Nm]) noexcept
+      |     ^~~~
+/usr/include/c++/13/bits/range_access.h:264:5: note:                 ‘template<class _Container> constexpr decltype (__cont.size()) std::size(const _Container&)’
+  264 |     size(const _Container& __cont) noexcept(noexcept(__cont.size()))
+      |     ^~~~
+debug-10-29-2024.cpp:6:11: note:                 ‘const int size’
+    6 | const int size = 6;
+      |           ^~~~
+debug-10-29-2024.cpp:29:40: error: reference to ‘size’ is ambiguous
+   29 |     cout << "maximum = " << maximum(a, size) << endl;
+      |                                        ^~~~
+/usr/include/c++/13/bits/range_access.h:274:5: note: candidates are: ‘template<class _Tp, long unsigned int _Nm> constexpr std::size_t std::size(const _Tp (&)[_Nm])’
+  274 |     size(const _Tp (&)[_Nm]) noexcept
+      |     ^~~~
+/usr/include/c++/13/bits/range_access.h:264:5: note:                 ‘template<class _Container> constexpr decltype (__cont.size()) std::size(const _Container&)’
+  264 |     size(const _Container& __cont) noexcept(noexcept(__cont.size()))
+      |     ^~~~
+debug-10-29-2024.cpp:6:11: note:                 ‘const int size’
+    6 | const int size = 6;
+      |           ^~~~
+debug-10-29-2024.cpp:29:29: error: ‘maximum’ was not declared in this scope
+   29 |     cout << "maximum = " << maximum(a, size) << endl;
+      |                             ^~~~~~~
+debug-10-29-2024.cpp: In function ‘double average(const double*, int)’:
+debug-10-29-2024.cpp:14:1: warning: control reaches end of non-void function [-Wreturn-type]
+   14 | }
+      | ^
+debug-10-29-2024.cpp: In function ‘double min(const double*, int)’:
+debug-10-29-2024.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+   22 | }
+      | ^
